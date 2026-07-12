@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Verification — Form RC-3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Georgia&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="page">
+
+  <div class="masthead">
+    <p class="masthead-date">VOL. IV — NO. 03 &nbsp;•&nbsp; ESTABLISHED NEVER &nbsp;•&nbsp; ONE COMPLIMENTARY VERIFICATION</p>
+    <h1 class="masthead-title">THE DAILY VERIFICATION</h1>
+    <p class="masthead-sub">Bureau of Automated Persons &nbsp;—&nbsp; Form RC-3</p>
+  </div>
+
+  <div class="rule-thick"></div>
+
+  <main class="sheet">
+
+    <header class="hero">
+      <p class="eyebrow">A Reverse Turing Test, Printed Daily</p>
+      <h2>Prove You Are <em>Not</em> Human</h2>
+      <p class="subtitle">Four challenges, drawn at random from a pool of six. Readers are scored on precision, timing, and reflex. Few applicants are convincing.</p>
+    </header>
+
+    <div class="meter-wrap">
+      <div class="dial">
+        <svg viewBox="0 0 200 110" id="dialSvg">
+          <path d="M10,100 A90,90 0 0,1 190,100" fill="none" stroke="#D8CFB4" stroke-width="14" stroke-linecap="round"/>
+          <path id="dialFill" d="M10,100 A90,90 0 0,1 190,100" fill="none" stroke="#1A1A1A" stroke-width="14" stroke-linecap="round" stroke-dasharray="283" stroke-dashoffset="283"/>
+        </svg>
+        <div class="dial-readout">
+          <strong id="dialScore">0</strong>
+          <small>BOT SCORE</small>
+        </div>
+      </div>
+      <div class="slots" id="slots"></div>
+    </div>
+
+    <div id="app"></div>
+
+    <footer class="fineprint">
+      All measurements are taken locally by the reader's own device and are not submitted to this publication, which would never dream of collecting such things.
+    </footer>
+
+  </main>
+
+</div>
+
+<div class="fx-layer" id="fxLayer" aria-hidden="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
